@@ -47,21 +47,21 @@ const page = () => {
     <>
     <h1 className= 'bg-red-500 text-white p-5 text-center text-2xl font-bold'>Aarchi's Todo List</h1>
     <form onSubmit= {submitHandler}>
-      <input className= 'border-red-400 border-4 text-2xl p-4 m-8 px-4 py-2' type= "text"
+      <input className= 'border-red-400 border rounded-3xl text-2xl p-4 m-8 px-4 py-2' type= "text"
       placeholder= "Enter your task"
       value= {title}
       onChange= {(e) => {
         settitle(e.target.value)
       }}
       />
-      <input className= 'border-red-400 border-4 text-2xl p-4 m-8 px-4 py-2' type= "text"
+      <input className= 'border-red-400 border rounded-3xl text-2xl p-4 m-8 px-4 py-2' type= "text"
       placeholder= "Enter Description here"
       value= {desc}
       onChange= {(e) => {
         setdesc(e.target.value)
       }}
       />
-      <button className= 'bg-red-500 text-white font-bold p-4 m-4 px-4 py-2 text-2xl rounded-full'>Add Task</button>
+      <button className= 'bg-gray-600 w-2/3 hover:bg-gray-950 transition-all hover:scale-105  text-white font-bold p-4 m-4 px-4 py-2 text-2xl rounded-full'>Add Task</button>
     </form>
     <hr/>
     <div className= 'p-5 bg-red-300'>
